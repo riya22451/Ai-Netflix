@@ -1,12 +1,9 @@
-
+import Body from "./components/Body"
 function App() {
   
 
   return (
-    <>
-      <h1>AI Netflix</h1>
-       
-    </>
+   <Body/>
   )
 }
 
