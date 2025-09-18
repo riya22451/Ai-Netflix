@@ -8,12 +8,12 @@ const useTrailer = (movieId) => {
     const getMovieVideo=async()=>{
         const data=await fetch(`https://api.themoviedb.org/3/movie/${movieId}/videos`,API_OPTIONS)
         const jsonData=await data.json();
-        console.log(jsonData);
+       
         const trailerData=jsonData.results.filter((video)=>video.name==="Official Trailer");
         const trailer=trailerData.length==0 ? jsonData.results[0]:trailerData[0];
           dispatch(addTrailer(trailer))
         
-        console.log(trailer);
+      
     }
       
     useEffect(()=>{

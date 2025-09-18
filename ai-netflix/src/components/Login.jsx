@@ -63,7 +63,7 @@ const Login = () => {
             
             {signIn ? null : <input type="text" placeholder="Username" className='p-4 my-4 border border-gray-50 w-full'/>}
             <input type="text" ref={email} placeholder="Email Address" className='p-4 my-4 border border-gray-50 w-full'/>
-              <input type="text" ref={password} placeholder="Password" className='p-4 my-4  border border-gray-50 w-full'/>
+              <input type="passsword" ref={password} placeholder="Password" className='p-4 my-4  border border-gray-50 w-full'/>
               <p className='text-red-700 font-bold py-2'>{Error}</p>
               <button className='bg-red-600 p-4 m-2 rounded-sm my-4 w-full' onClick={handleClick}>{signIn ? "Sign In" : "Sign Up"}</button>
               <p>{signIn?"New to Netflix ? ":"Already Registered ? "}<span className='font-bold hover:underline cursor-pointer' onClick={handle} >{signIn?"Sign up now.":"Sign In"}</span></p>
