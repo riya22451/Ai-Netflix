@@ -26,7 +26,7 @@ const Login = () => {
   .then((userCredential) => {
     // Signed up 
     const user = userCredential.user;
-      navigate("/browse")
+      
     // ...
   })
   .catch((error) => {
@@ -42,7 +42,7 @@ const Login = () => {
   .then((userCredential) => {
     // Signed in 
     const user = userCredential.user;
-    navigate("/browse")
+   
     // ...
   })
   .catch((error) => {
