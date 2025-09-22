@@ -7,4 +7,3 @@ export const API_OPTIONS={
   }
 };
 export const IMAGE_BASE_URL="https://image.tmdb.org/t/p/w500";
-export const API_KEY="AIzaSyCngF_cGUHlbpS2H0Wm7dYo86QuIH1aUCQ"
