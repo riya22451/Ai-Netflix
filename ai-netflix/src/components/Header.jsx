@@ -51,8 +51,8 @@ return ()=>unsubscribe();
        dispatch(changeLanguage(e.target.value))
     }
   return (
-   <div className='absolute w-screen py-2 bg-gradient-to-b from-black z-30 flex justify-between px-8'>
-    <img className='w-52' src="https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production_2025-08-26/consent/87b6a5c0-0104-4e96-a291-092c11350111/0198e689-25fa-7d64-bb49-0f7e75f898d2/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png" alt="netflix"/>
+   <div className='absolute w-screen py-2 bg-gradient-to-b from-black z-30 flex flex-col md:flex-row justify-between px-8'>
+    <img className='w-52 mx-auto md:mx-0' src="https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production_2025-08-26/consent/87b6a5c0-0104-4e96-a291-092c11350111/0198e689-25fa-7d64-bb49-0f7e75f898d2/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png" alt="netflix"/>
     {user && 
     <div className='flex items-center '>
       {view? <select className='text-white h-10 w-32 text-center rounded-sm m-2 border border-white' onChange={handleLang}>

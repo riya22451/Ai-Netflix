@@ -56,9 +56,9 @@ const Login = () => {
     <div>
         <Header/>
         <div className='absolute'> 
-            <img src="https://assets.nflxext.com/ffe/siteui/vlv3/0b0dad79-ad4d-42b7-b779-8518da389976/web/IN-en-20250908-TRIFECTA-perspective_0647b106-80e1-4d25-9649-63099752b49a_small.jpg" alt="background"/>
+            <img className='h-screen w-screen object-cover' src="https://assets.nflxext.com/ffe/siteui/vlv3/0b0dad79-ad4d-42b7-b779-8518da389976/web/IN-en-20250908-TRIFECTA-perspective_0647b106-80e1-4d25-9649-63099752b49a_small.jpg" alt="background"/>
         </div>
-        <form className='p-12 bg-black/70 absolute  w-3/12 mt-36 mx-auto left-0 right-0 text-white flex flex-col' onSubmit={(e)=>e.preventDefault()}> 
+        <form className='p-12 bg-black/70 absolute w-full mx-4 md:w-3/12 md:mx-auto  mt-36  left-0 right-0 text-white flex flex-col' onSubmit={(e)=>e.preventDefault()}> 
         <h1 className='font-bold text-3xl my-4 '>{signIn ? "Sign In" : "Sign Up"}</h1>
             
             {signIn ? null : <input type="text" placeholder="Username" className='p-4 my-4 border border-gray-50 w-full'/>}
